@@ -58,7 +58,7 @@ $new->free_result();
 $statement = $db->conn->prepare("INSERT INTO RESERVE (guest_id, room_id, res_start, res_end) VALUES(?,?,?,?)");
   if(!$statement) die("Prepare failed: " . $db->conn->error);
 
-$bind = $statement->bind_param("iiss", $guestID, $roomID, $startDate, $endDate); //TODO: dates are string??
+$bind = $statement->bind_param("iiss", $guestID, $roomID, $startDate, $endDate);
   if(!$bind) die("Bind failed: " . $statement->error);
 
 $execute = $statement->execute();
