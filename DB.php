@@ -1,12 +1,4 @@
 <?php
-// hotelManagement/DB.php
-// Created: May 4th, 2018
-// Created by Wayne Warnke
-//
-// Last Edit: May 6th, 2018
-// Edited by Caleb Sarikey
-
-
 // Hotel Management System - DB Class
 //
 // DB.php is a class that establishes a connection to
@@ -15,7 +7,7 @@
 //
 //
 // TODO: Change the server, user, pw, and database name variables
-//       to corrilate with the database we will be using.
+//       to match the database to be used.
 
 class DB {
   public $conn;
